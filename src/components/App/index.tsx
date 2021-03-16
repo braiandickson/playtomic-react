@@ -1,10 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import store from '../../store/';
+import Routes from '../Routes';
 
 function App() {
   return (
-    <div className="main-container">
+    <Provider store={store}>
       <h1>Playtonic</h1>
-    </div>
+      <Routes />
+    </Provider>
   );
 }
 
